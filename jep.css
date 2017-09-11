@@ -1,0 +1,26 @@
+#start-screen {
+    text-align: center;
+    background-color: #1010C7;
+    font-size: 60px;
+    height: 50%;
+    font-family: 'Roboto mono';
+
+}
+body {
+    background-color: black;
+}
+p {
+    color: silver;
+    font-family: 'Roboto mono';
+    text-align: center;
+    padding: 50px;
+}
+.button{
+    text-align: center;
+}
+#game-start {
+    text-align: center;
+}
+footer {
+text-align: center;
+}
