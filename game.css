@@ -1,0 +1,30 @@
+#header {
+    background-color: blue;
+}
+
+
+body {
+    background-color: black;
+}
+
+
+
+
+
+#gameScreen {
+    text-align: center;
+    background-color: blue;
+    text-align: center;
+    background-color: #1010C7;
+    font-size: 60px;
+    height: 50%;
+    font-family: 'Roboto mono';
+    color: silver;
+}
+
+#footer {
+    display: flex;
+    
+    text-align: center;
+}
+
