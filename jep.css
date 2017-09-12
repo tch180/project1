@@ -19,14 +19,16 @@ p {
 }
 
 #button {
+    display: block;
     text-align: center;
+    
 }
 
 #game-start {
     text-align: center;
 }
 
-footer {
+#footer {
     text-align: center;
 }
 

@@ -1,9 +1,9 @@
 $(document).ready(function () {
- $('start').Click(function($event) {
-    console.log(this);
- }  )
-  
-  
+ $('button').Click(function() {
+    $('start').hide();
+ 
+ });
+});  
   
   
     // $('.game-instructions').mouseover(.show('hidden'))
@@ -11,8 +11,5 @@ $(document).ready(function () {
     //alert('button clicked');
     //console.log("button clicked");
     //window.location.href='jep.js';
- })
-
-
-
+ 
 
