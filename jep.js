@@ -1,6 +1,18 @@
-$('start'){
-    button('start').onClick='game.html'
-}
-$('hidden') {
-    onmouseover.show('hidden')
-}
+$(document).ready(function () {
+ $('start').Click(function($event) {
+    console.log(this);
+ }  )
+  
+  
+  
+  
+    // $('.game-instructions').mouseover(.show('hidden'))
+//$('button.start').onclick(function(){
+    //alert('button clicked');
+    //console.log("button clicked");
+    //window.location.href='jep.js';
+ })
+
+
+
+
