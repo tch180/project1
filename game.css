@@ -14,12 +14,13 @@
 
 #gameScreen {
     text-align: center;
-    background-color: #1010C7;
+    background-color:rgba(0, 0, 0, 0.92);
     font-size: 60px;
     height: 50%;
     font-family: 'Roboto mono';
-    color: silver;
+    color: rgba(192, 192, 192, 0.89);
     border-radius: 25px;
+    border: outset;
 }
 
 .footer {
@@ -28,15 +29,14 @@
     background-color: silver;
 }
 
-#category col-md-2 {
-    color: red:
-}
 
+/*color control for div well questions boxes*/
 .panel-body {
-    color: rgba(0, 0, 255, 0.71);
-    
+    color: rgb(223, 223, 223);
+    text-decoration-color: silver;
 }
 
+/*controls buttons for values 100-500 */
 .question {
     height: 100px;
     vertical-align: middle;
@@ -44,15 +44,54 @@
     font-size: 1.5em;
     padding-top: 35px;
     cursor: pointer;
-}
+    background-color: #0C0C8D;
 
+}
+.panel-default{
+    background-color: black;
+}
+/*controls panel with catergories*/
 .panel-heading h4 {
     text-transform: uppercase;
-    background-color: black
+    background-color: #141414;
+    font-family: "Roboto mono";
+    border: outset; 
 }
 #main-board {
     background-color: rgba(0, 0, 0, 0.86);
 }
 h4{
+    font-family: "Roboto mono";
+    font-size: 19px;
     color: silver;
+    text-shadow: 2px 2px 4px #FFFF05
+    
+}
+h1 {
+    font-family: "Roboto mono";
+    color: silver;
+}
+.panel-default {
+    background-color: rgba(0, 0, 255, 0.57);
+}
+
+.panel-default>.panel-heading {
+    background-color: blue;
+}
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #072CCF;
+    border: 4px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+.modal-body {
+    position: relative;
+    overflow-y: auto;
+    max-height: 400px;
+    padding: 15px;
 }

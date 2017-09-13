@@ -1,9 +1,12 @@
 $(document).ready(function () {
- $('button').Click(function() {
-    $('start').hide();
+ //$('button').Click(function() {
+   // $('start').hide();
+   $('#hosueof').popup({
+       transition: 'all 0.3s'
+   })
  
  });
-});  
+//});  
   
   
     // $('.game-instructions').mouseover(.show('hidden'))
