@@ -19,20 +19,23 @@ p {
 }
 
 #button {
-    display: block;
     text-align: center;
-    
 }
 
 #game-start {
     text-align: center;
 }
 
-#footer {
+.footer {
     text-align: center;
+    font-family: "Roboto mono";
 }
 
 span {
     background-color: blue;
     display: block;
+}
+p.instructions {
+    color: green;
+    font-size: 23px;
 }

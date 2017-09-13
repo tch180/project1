@@ -2,29 +2,57 @@
     background-color: blue;
 }
 
-
-body {
+#game {
     background-color: black;
+    display: block;
 }
 
-
-
-
+#gameBoard {
+    background-color: #54545F;
+    padding: 30px;
+}
 
 #gameScreen {
-    text-align: center;
-    background-color: blue;
     text-align: center;
     background-color: #1010C7;
     font-size: 60px;
     height: 50%;
     font-family: 'Roboto mono';
     color: silver;
+    border-radius: 25px;
 }
 
-#footer {
-    display: flex;
-    
+.footer {
+    font-family: "Roboto mono";
     text-align: center;
+    background-color: silver;
 }
 
+#category col-md-2 {
+    color: red:
+}
+
+.panel-body {
+    color: rgba(0, 0, 255, 0.71);
+    
+}
+
+.question {
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 35px;
+    cursor: pointer;
+}
+
+.panel-heading h4 {
+    text-transform: uppercase;
+    background-color: black
+}
+#main-board {
+    background-color: rgba(0, 0, 0, 0.86);
+}
+h4{
+    color: silver;
+}
