@@ -93,9 +93,9 @@ h1 {
 height:20px;
 
 }
-.modal-fade{
-    position: relative;
-    overflow-y: auto;
-    max-height: 400px;
-    padding: 15px;
+#score{
+    font-family: "Roboto mono";
+    color: silver;
+    font-size: 28px;
+    padding: 2px;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="jep.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -17,6 +17,8 @@
 <header id="gameScreen">
     <p>Jeopardy</p>
 </header>
+<div id='score' class="buttonscore">score
+    <span id="scoresheet">0</span></div>
 
 <body id="game">
     <div class="panel panel-default">
@@ -30,71 +32,69 @@
             <div class="text-center col-md-2 col-md-offset-1">
                 <h4>the house of </h4>
             </div>
+
             <div class="text-center col-md-2">
                 <h4>DS 9</h4>
             </div>
+
             <div class="text-center col-md-2">
                 <h4>Ship Class</h4>
             </div>
+
             <div class="text-center col-md-2">
                 <h4>Music</h4>
             </div>
+
             <div class="text-center col-md-2">
                 <h4>Voyager</h4>
             </div>
+
             <div class="clearfix"></div>
         </div>
         <div class="panel-body" id="main-board">
             <div id=ds9 class="category col-md-2 col-md-offset-1">
-                <button id="houseof" type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#modal">$100</button>
-                <button id="houseof" type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal"
-                    data-target="#html200">$200</button>
-                <button id="houseof" type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal"
-                    data-target="#html300">$300</button>
-                <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal"
-                    data-target="#html400">$400</button>
-                <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal"
-                    data-target="#html400">$500</button>
+<button id="houseof" type="button" class="btn btn-primary btn-lg btn-block ds91a "  <disabled>$100</button>
+<button id="houseof" type="button" class="btn btn-primary btn-lg btn-block" <disabled>$200</button>
+<button id="houseof" type="button" class="btn btn-primary btn-lg btn-block" <disabled>$300</button>
+<button id="houseof" type="button" class="btn btn-primary btn-lg btn-block" <disabled>$400</button>
+<button id="houseof" type="button" class="btn btn-primary btn-lg btn-block" <disabled>$500</button>
             </div>
 
 
             <div class="category col-md-2">
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#">$100</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#html200">$200</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#html300">$300</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#html400">$400</button>
-                <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal"
-                    data-target="#html400">$500</button>
+                <button value="100" type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg">$100</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg">$200</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg">$300</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg">$400</button>
+                <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg">$500</button>
             </div>
 
 
             <div class="category col-md-2">
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#">$100</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#html200">$200</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#html300">$300</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#html400">$400</button>
-                <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal"
-                    data-target="#html400">$500</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg ">$100</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html200">$200</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html300">$300</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html400">$400</button>
+                <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" html400 ">$500</button>
             </div>
 
 
-            <div id='' class="category col-md-2">
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#">$100</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#html200">$200</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#html300">$300</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#html400">$400</button>
-                <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal"
-                    data-target="#html400">$500</button>
+            <div id='' class="category col-md-2 ">
+                <button type="button " class="btn btn-primary btn-lg btn-block " class="btn btn-info btn-lg ">$100</button>
+                <button type="button " class="btn btn-primary btn-lg btn-block " class="btn btn-info btn-lg html200 ">$200</button>
+                <button type="button " class="btn btn-primary btn-lg btn-block " class="btn btn-info btn-lg html300 ">$300</button>
+                <button type="button " class="btn btn-primary btn-lg btn-block " class="btn btn-info btn-lg html400 ">$400</button>
+                <button id="houseof " type='button' class="btn btn-primary btn-lg btn-block " class="btn btn-info btn-lg " 
+         html400">$500</button>
             </div>
 
 
             <div class="category col-md-2">
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#">$100</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#html200">$200</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#html300">$300</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal" data-target="#html400">$400</button>
-                <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" data-toggle="modal"
-                    data-target="#html400">$500</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg ">$100</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html200">$200</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html300">$300</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html400">$400</button>
+                <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" html400 ">$500</button>
             </div>
         </div>
         </main>
