@@ -1,13 +1,13 @@
 $(document).ready(function () {
     $("button#houseof").on("click" , function(){
-   alert('Hello');
-    })
+ var questions =  ["Rynar" /*kor*/, "Kurn"/*Noggra*/, "Worf",/*Mogh*/ 'Jadzia', /* Martok */ 'ipsum'/*ipsum*/]; 
+  for(i = 0; i <= questions.length; i++ )
+  alert(questions[i]);})
+    {
+    //prompt(questions[i]);
     
-   var questions =  ["Rynar" /*kor*/, "Kurn"/*Noggra*/, "Worf",/*Mogh*/ 'Jadzia', /* Martok */ 'ipsum'/*ipsum*/];
+    }
 
-for(i = 0; i < questions.length; ++i ) {
-    alert(questions[i])
-}
 
 
 
