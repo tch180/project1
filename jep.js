@@ -1,27 +1,41 @@
 
 const questions =  ["Rynar" /*kor*/, "Kurn"/*Noggra*/, "Worf",/*Mogh*/ 'Jadzia', /* Martok */ 'ipsum'/*ipsum*/];
 const answers = ["kor", "Noggra", "Mogh", "Martok", "ipsum"];
+
 $(document).ready(function () {
+
+// button for house of.
 $("button#houseof").on("click" , function(){
    userAnwser = prompt(questions[(Math.floor (Math.random() * questions.length))]);
 //for each loop
+let x = true;
 for (i = 0; i < answers.length; i++) {
-    for (i = 0; i < answers.length; i++) {
         if (userAnwser === answers[i]) {
-              alert('CORRECT')
-       
-          }
-      }
+            x = true
+            break;
+        } else {
+                x = false
+            }
+            
+            
+} if (x === true) {
+    alert('correct')
+} else {
+    alert('no')
+    return;
+}}
+
+      
       
     
      
-  }
+  
   
 
  
  
+)})
 
-})})
 
 //function questions () {
 //    const houseofQuestions = [];
