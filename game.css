@@ -27,6 +27,7 @@
     font-family: "Roboto mono";
     text-align: center;
     background-color: silver;
+    color: yellow;
 }
 
 
@@ -89,10 +90,17 @@ h1 {
     box-shadow: inset 0 1px 1px rgba(243, 3, 3, 0.05);
 }
 
-.button {
-height:20px;
+#btn-group-lg>.btn, .btn-lg {
+    padding: 20px 25px 30px 40px;
+    font-size: 22px;
+    line-height: 1.3333333;
+    border-radius: 14px;
+    justify-content: space-between; }
 
+<<<<<<< HEAD
+=======
 }
+>>>>>>> a7c39f34942fac08ffde1fe1ec3808a7f3852167
 #score{
     font-family: "Roboto mono";
     color: silver;
