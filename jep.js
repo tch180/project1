@@ -1,4 +1,4 @@
-
+// question and answer arrays 
 const questions =  ["Rynar" /*kor*/, "Kurn"/*Noggra*/, "Worf",/*Mogh*/ 'Jadzia', /* Martok */ 'ipsum'/*ipsum*/];
 const answers = ["kor", "Noggra", "Mogh", "Martok", "ipsum"];
 
@@ -8,7 +8,7 @@ $('.houseof1').attr('disabled', false)
 $("button#houseof").on("click" , function(){
     $('#houseof').attr('disabled', true)
    userAnwser = prompt(questions[(Math.floor (Math.random() * questions.length))]);
-//for each loop
+//for loop
 let x = true;
 for (i = 0; i < answers.length; i++) {
         if (userAnwser === answers[i]) {
@@ -44,8 +44,7 @@ for (i = 0; i < answers.length; i++) {
  
 )})
 
-var score = x
-var ds91a = 100
+
 //function questions () {
 //    const houseofQuestions = [];
 //    houseofQuestions.push(questions.shift());
