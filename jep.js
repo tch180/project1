@@ -2,9 +2,6 @@
 const questions =  ["Rynar" /*kor*/, "Kurn"/*Noggra*/, "Worf",/*Mogh*/ 'Jadzia', /* Martok */ 'ipsum'/*ipsum*/];
 const answers = ["kor", "Noggra", "Mogh", "Martok", "ipsum"];
 
-//const questions = ["Rynar" /*kor*/ , "Kurn" /*Noggra*/ , "Worf", /*Mogh*/ 'Jadzia', /* Martok */ 'ipsum' /*ipsum*/ ];
-
-//const answers = ["kor", "Noggra", "Mogh", "Martok", "ipsum"];
 
 $(document).ready(function () {
 
@@ -111,6 +108,5 @@ for (i = 0; i < answers.length; i++) {
 
 
 
-)
+),)})
 
-},)
