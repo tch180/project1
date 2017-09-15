@@ -5,6 +5,7 @@
 //const answers = ["kor", "Noggra", "Mogh", "Martok", "ipsum"];
 
 $(document).ready(function () {
+<<<<<<< HEAD
 
 const houseQuestions = [
     {
@@ -34,6 +35,37 @@ const houseQuestions = [
 },
 ];
 //const x = prompt(houseQuestions[1].questions)
+=======
+$('.houseof1').attr('disabled', false)
+// button for house of.
+$("button#houseof").on("click" , function(){
+    $('#houseof').attr('disabled', true)
+   userAnwser = prompt(questions[(Math.floor (Math.random() * questions.length))]);
+//for each loop
+let x = true;
+for (i = 0; i < answers.length; i++) {
+        if (userAnwser === answers[i]) {
+            x = true
+            break;
+        } else {
+                x = false
+            }
+            
+            
+} if (x === true) {
+    alert('correct')
+} else {
+    alert('no')
+    return;
+}
+
+
+
+
+}
+
+
+>>>>>>> a7c39f34942fac08ffde1fe1ec3808a7f3852167
 
 //$('#button#houseof').on('click', function (){
     $('#100').attr('disabled, true')
@@ -41,8 +73,19 @@ const houseQuestions = [
  //var housename = houseQuestions
 
 
+<<<<<<< HEAD
 
 //$('.houseof1').attr('disabled', false)
+=======
+var score = x
+var ds91a = 100
+//function questions () {
+//    const houseofQuestions = [];
+//    houseofQuestions.push(questions.shift());
+    
+//    return houseofQuestions;
+//}
+>>>>>>> a7c39f34942fac08ffde1fe1ec3808a7f3852167
 
 // button for house of.
 
