@@ -1,68 +1,75 @@
+// question and answer arrays 
 
-const questions =  ["Rynar" /*kor*/, "Kurn"/*Noggra*/, "Worf",/*Mogh*/ 'Jadzia', /* Martok */ 'ipsum'/*ipsum*/];
-const answers = ["kor", "Noggra", "Mogh", "Martok", "ipsum"];
+//const questions = ["Rynar" /*kor*/ , "Kurn" /*Noggra*/ , "Worf", /*Mogh*/ 'Jadzia', /* Martok */ 'ipsum' /*ipsum*/ ];
+
+//const answers = ["kor", "Noggra", "Mogh", "Martok", "ipsum"];
 
 $(document).ready(function () {
 
+const houseQuestions = [
+    {
+      questions: "Worf",
+      answer: "Mogh ",
+      points: 100,
+    },
+{
+        questions: "Rynar",
+        answer: "Kor",
+        points:200,
+},
+{
+       questions: "Kurn",
+        answer:"Noggra",
+        points:300,
+},
+{
+       questions: "Jadzia",
+        answer:"Martok",
+        points: 400,
+},
+{
+       questions: "ipsum",
+        answer:"musip",
+        points:500,
+},
+];
+//const x = prompt(houseQuestions[1].questions)
+
+//$('#button#houseof').on('click', function (){
+    $('#100').attr('disabled, true')
+//})
+ //var housename = houseQuestions
+
+
+
+//$('.houseof1').attr('disabled', false)
+
 // button for house of.
-$("button#houseof").on("click" , function(){
-   userAnwser = prompt(questions[(Math.floor (Math.random() * questions.length))]);
-//for each loop
-let x = true;
-for (i = 0; i < answers.length; i++) {
-        if (userAnwser === answers[i]) {
-            x = true
-            break;
-        } else {
+
+$("button#houseof").on("click", function () {
+        //$('#houseof').attr('disabled', true)
+        userAnwser = prompt(houseQuestions[1][(Math.floor(Math.random() * houseQuestions.length))]);
+        //for loop
+        let x = true;
+        for (i = 0; i < houseQuestions.answers.length; i++) {
+            if (userAnwser === houseQuestions[1].answers[i]) {
+                x = true
+                break;
+            } else {
                 x = false
             }
-            
-            
-} if (x === true) {
-    alert('correct')
-} else {
-    alert('no')
-    return;
-}}
-
-      
-      
-    
-     
-  
-  
-
- 
- 
-)})
-
-
-//function questions () {
-//    const houseofQuestions = [];
-//    houseofQuestions.push(questions.shift());
-    
-//    return houseofQuestions;
-//}
+        }
+        if (x === true) {
+            alert('correct')
+        } else {
+            alert('no')
+            return;
+        }
+}
 
 
 
 
-//functionrandomQuestions1() {
-    
-//}
- // if (i === 0) {break; }
-    //prompt(questions[i]);
-    //button.push(question);Math.floor(Math.random * question.length)
-        //alert('button 1');
-//var houseofQuestions =houseofQuestions()
- //questions ["Rynar" /*kor*/, "Kurn"/*Noggra*/, "Worf",/*Mogh*/ 'Jadzia', /* Martok */ 'ipsum'/*ipsum*/];
- 
- //alert(questions);
- //answers   ["kor", "Noggra", "Mogh", "Martok", "ipsum"]
- //for (i = 0; i < houseofQuestions.length;); i++) {
-  //   alert('houseofQuestions[i]');
- 
- 
+)
 
-
-
+})
