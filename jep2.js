@@ -1,9 +1,12 @@
 
-    //questions array
+    //Houseof questions array 
     const questions =  ["Rynar" , "Kurn", "Worf", 'Jadzia',  'Dax'];
-    // answers array 
+    // House fof answers array 
     const answers = [   "Noggra", "kor", "Mogh", "Martok", "Martok"];
-            
+    //ShipClass questions
+    const shipClassQuestions = ["USS Gandhi", "USS StarGazer", "USS Sao Paulo", "USS Melbourne", "USS Odyssey"];
+    //ShipClas Answers 
+    const shipClassAnswers = ["Ambassador", "Constellation", "Defiant", "Excelsior", "Galaxy"];
     /*function myResponse (userInput) {
         //create function
     if(userInput === true) {
@@ -21,24 +24,22 @@
     if (askQuestion === answers.shift()) { // if the users input = the array of anwers at space 1 ask questions 
             askQuestion = true;             //if true display correct. 
             alert('Correct');
-     var  score =+100;
+     var  score =+$('button.value');                      // add value 
     } else {
-        alert("Incorrect");
-      var score =-100;
-     
+        alert("Incorrect");                  // otherwise alert incorrect 
+        var score =-100;                     // subtract value 
+      questions.shift();                       // take the question out of the array
+    answers.shift();                            // take the answers out of the array 
 
-        questions.shift();
-        answers.shift();
-
-        return;
         
+       // $('span#scoresheet').attr(button.value);  working out the syntax
     
         }
             
     }
         
         
-        //$('span#scoresheet').attr('score')
+        //$('span#scoresheet').attr(.value);
    /*askQuestion = prompt(questions[(Math.floor (Math.random() * questions.length))]); //ask random Question from array
        askQuestion = prompt(questions[0]);
        if (askQuestion === answers[1] ) {

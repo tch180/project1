@@ -8,6 +8,7 @@
 
 body {
     background-color: black;
+    
 }
 
 p {
@@ -16,6 +17,7 @@ p {
     text-align: center;
     padding: 50px;
     display: hidden;
+    
 }
 
 #button {

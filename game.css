@@ -35,6 +35,11 @@
 .panel-body {
     color: rgb(223, 223, 223);
     text-decoration-color: silver;
+    background-image: url("http://cdn.wallpapersafari.com/85/70/NBkWLF.jpg" );
+    background-repeat: no-repeat;
+    background-size: 1050px 495px ;
+    
+    
 }
 
 /*controls buttons for values 100-500 */
@@ -102,4 +107,7 @@ div#score {
     color: silver;
     font-size: 28px;
     padding: 2px;
+}
+#main-board.panel-body{
+    background-image: img src="http://cdn.wallpapersafari.com/89/80/3EGbTt.gif";
 }
