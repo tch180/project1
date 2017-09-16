@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script src="jep.js"></script>
+    <script src="jep2.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -17,7 +17,7 @@
 <header id="gameScreen">
     <p>Jeopardy</p>
 </header>
-<div id='score' class="buttonscore">score
+<div id="score">score
     <span id="scoresheet">0</span></div>
 <body id="game">
     <div class="panel panel-default">
@@ -45,53 +45,52 @@
             </div>
             <div class="clearfix"></div>
         </div>
-        <div class="panel-body" id="main-board">
-<div class="category col-md-2 col-md-offset-1">
-    <button id="houseof" class="btn btn-primary btn-lg btn-block">$100</button>
-    <button id="houseof" class="btn btn-primary btn-lg btn-block">$200</button>
-    <button id="houseof" type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg">$300</button>
-         <button id="houseof" type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg">$400</button>
- <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" 
-         html400">$500</button>
+
+
+<div class="panel-body" id="main-board">
+    <div class="category col-md-2 col-md-offset-1">
+        <button id="houseof" value="100" class="btn btn-primary btn-lg btn-block" disable>$100</button>
+        <button id="houseof" value="200" class="btn btn-primary btn-lg btn-block" disable>$200</button>
+        <button id="houseof" value="300" class="btn btn-primary btn-lg btn-block" disable>$300</button>
+        <button id="houseof" value="400" class="btn btn-primary btn-lg btn-block" disable>$400</button>
+        <button id="houseof" value="500" class="btn btn-primary btn-lg btn-block" disable>$500</button>
+     </div>
+
+
+            <div class="category col-md-2">
+                    <button id="ds9" class="btn btn-primary btn-lg btn-block">$100</button>
+                    <button id="ds9" class="btn btn-primary btn-lg btn-block">$200</button>
+                    <button id="ds9" class="btn btn-primary btn-lg btn-block">$300</button>
+                    <button id="ds9" class="btn btn-primary btn-lg btn-block">$400</button>
+                    <button id="ds9" class="btn btn-primary btn-lg btn-block">$500</button>
             </div>
 
 
             <div class="category col-md-2">
-                <button value="100" type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg">$100</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg">$200</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg">$300</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg">$400</button>
-                <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg">$500</button>
-            </div>
-
-
-            <div class="category col-md-2">
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg ">$100</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html200">$200</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html300">$300</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html400">$400</button>
-                <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" 
-         html400">$500</button>
+                    <button id="shipClass" class="btn btn-primary btn-lg btn-block">$100</button>
+                    <button id="shipClass" class="btn btn-primary btn-lg btn-block">$200</button>
+                    <button id="shipClass" class="btn btn-primary btn-lg btn-block">$300</button>
+                    <button id="shipClass" class="btn btn-primary btn-lg btn-block">$400</button>
+                    <button id="shipClass" class="btn btn-primary btn-lg btn-block">$500</button>
+         
             </div>
 
 
             <div id='' class="category col-md-2">
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg ">$100</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html200">$200</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html300">$300</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html400">$400</button>
-                <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" 
-         html400">$500</button>
+                    <button id="music" class="btn btn-primary btn-lg btn-block">$100</button>
+                    <button id="music" class="btn btn-primary btn-lg btn-block">$200</button>
+                    <button id="music" class="btn btn-primary btn-lg btn-block">$300</button>
+                    <button id="music" class="btn btn-primary btn-lg btn-block">$400</button>
+                    <button id="music" class="btn btn-primary btn-lg btn-block">$500</button>
             </div>
 
 
             <div class="category col-md-2">
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg ">$100</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html200">$200</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html300">$300</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg html400">$400</button>
-                <button id="houseof" type='button' class="btn btn-primary btn-lg btn-block" class="btn btn-info btn-lg" 
-         html400">$500</button>
+                    <button id="voyager" class="btn btn-primary btn-lg btn-block">$100</button>
+                    <button id="voyager" class="btn btn-primary btn-lg btn-block">$200</button>
+                    <button id="voyager" class="btn btn-primary btn-lg btn-block">$300</button>
+                    <button id="voyager" class="btn btn-primary btn-lg btn-block">$400</button>
+                    <button id="voyager" class="btn btn-primary btn-lg btn-block">$500</button>
             </div>
         </div>
         </main>

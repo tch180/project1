@@ -1,112 +1,39 @@
-// question and answer arrays 
-const questions =  ["Rynar" /*kor*/, "Kurn"/*Noggra*/, "Worf",/*Mogh*/ 'Jadzia', /* Martok */ 'ipsum'/*ipsum*/];
-const answers = ["kor", "Noggra", "Mogh", "Martok", "ipsum"];
-
-
 $(document).ready(function () {
-
-const houseQuestions = [
-    {
-      questions: "Worf",
-      answer: "Mogh ",
-      points: 100,
-    },
-{
-        questions: "Rynar",
-        answer: "Kor",
-        points:200,
-},
-{
-       questions: "Kurn",
-        answer:"Noggra",
-        points:300,
-},
-{
-       questions: "Jadzia",
-        answer:"Martok",
-        points: 400,
-},
-{
-       questions: "ipsum",
-        answer:"musip",
-        points:500,
-},
-];
-//const x = prompt(houseQuestions[1].questions)
-$('.houseof1').attr('disabled', false)
-// button for house of.
+//questions array
+const questions =  ["Rynar" , "Kurn", "Worf", 'Jadzia',  'Dax'];
+// answers array 
+const answers = ["kor", "Noggra", "Mogh", "Martok", "Martok"];
+        
+      
+        
+// button for house of that on click of any button with the id will run through the array of questions and randomly display any, and compare the users input to the anwser array and then display correct or incorrect 
 $("button#houseof").on("click" , function(){
-    $('#houseof').attr('disabled', true)
-   userAnwser = prompt(questions[(Math.floor (Math.random() * questions.length))]);
-//for loop
+userAnwser = prompt(questions[(Math.floor (Math.random() * questions.length))]);
+        
 let x = true;
-for (i = 0; i < answers.length; i++) {
+    for (i = 0; i < answers.length; ++i) {
         if (userAnwser === answers[i]) {
-            x = true
-            break;
+        x = true
+        break;
         } else {
-                x = false
-            }
-            
-            
-} if (x === true) {
-    alert('correct')
-} else {
-    alert('no')
-    return;
-}
-
-
-
-
-}
-
-
-
-//$('#button#houseof').on('click', function (){
-    ,$('#100').attr('disabled, true')
-//})
- //var housename = houseQuestions
-
-
-
-
-
-//$('.houseof1').attr('disabled', false)
-//var score = x
-//var ds91a = 100
-
-//function questions () {
-//    const houseofQuestions = [];
-//    houseofQuestions.push(questions.shift());
-    
-//    return houseofQuestions;
-//}
-// button for house of.
-
-,$("button#houseof").on("click", function () {
-        //$('#houseof').attr('disabled', true)
-        userAnwser = prompt(houseQuestions[1][(Math.floor(Math.random() * houseQuestions.length))]);
-        //for loop
-        let x = true;
-        for (i = 0; i < houseQuestions.answers.length; i++) {
-            if (userAnwser === houseQuestions[1].answers[i]) {
-                x = true
-                break;
-            } else {
-                x = false
-            }
-        }
-        if (x === true) {
-            alert('correct')
+        x = false
+                }
+        } if (x === true) {
+            alert('Correct')
         } else {
-            alert('no')
+            alert('Incorrect')
             return;
         }
-}
+          // if answer is correct 
+         if(x === true) {
+             $('span#scoresheet').html('value')
+              
+          }
+          // take value of button clicked 
+          //push it to scoresheet span 
+          //do math
+    }
+ )})
 
 
-
-
-),)})
 
