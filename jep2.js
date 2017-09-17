@@ -7,8 +7,8 @@ const shipClassQuestions = ["USS Gandhi", "USS StarGazer", "USS Sao Paulo", "USS
 //ShipClas Answers 
 const shipClassAnswers = ["Ambassador", "Constellation", "Defiant", "Excelsior", "Galaxy"];
 
-const ds9Questions = ["1", "2"];
-const ds9Answers =["1","2"];
+const ds9Questions = ["1st officer", "Chief Engineer", "Klingon Coffee ", ];
+const ds9Answers =["1","2", "Raktajino", ];
 const musicQuestions= ["1","2"];
 const musicAnswers =["1","2"];
 const voyagerQuestions =[1, 2];
@@ -53,16 +53,16 @@ $('button#ds9').on('click', function(){
         alert('Incorrect');
     }
 }) // end of ds9 function 
-
+// button function for music questions
     $('button#music').on('click', function(){
         console.log('clicked');
-        askQuestion = prompt(shipClassQuestions.shift())
-        if (askQuestion === shipClassAnswers.shift()){
+        askQuestion = prompt(musicQuestions.shift())
+        if (askQuestion === musicAnswers.shift()){
             askQuestion = true;
             alert('Correct');
                  } else {
             alert('Incorrect');
-        }
+        }   // end of music questions
     })})
 
 //doc rdy func
