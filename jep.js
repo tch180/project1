@@ -20,7 +20,7 @@ let x = true;
                 }
         } if (x === true) {
             alert('Correct')
-        } else {
+        } else if (x !== true){
             alert('Incorrect')
             return;
         }
