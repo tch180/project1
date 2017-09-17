@@ -19,10 +19,8 @@ $(document).ready(function () {
             } else {
                 alert("Incorrect"); // otherwise alert incorrect 
                 var score = -100; // subtract value 
-                questions.shift(); // take the question out of the array
-                answers.shift(); // take the answers out of the array 
-
-
+                //questions.shift(); // take the question out of the array
+                //answers.shift(); // take the answers out of the array 
                 // $('span#scoresheet').attr(button.value);  working out the syntax
 
             }
@@ -37,7 +35,13 @@ $(document).ready(function () {
 
     $('button#shipClass').on('click', function(){
         console.log('clicked');
-        askQuestion = prompt
+        askQuestion = prompt(shipClassQuestions.shift())
+        if (askQuestion === shipClassAnswers.shift()){
+            askQuestion = true;
+            alert('Correct');
+                 } else {
+            alert('Incorrect')
+        }
     }
 )
 })
