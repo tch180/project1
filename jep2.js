@@ -7,6 +7,13 @@ const shipClassQuestions = ["USS Gandhi", "USS StarGazer", "USS Sao Paulo", "USS
 //ShipClas Answers 
 const shipClassAnswers = ["Ambassador", "Constellation", "Defiant", "Excelsior", "Galaxy"];
 
+const ds9Questions = ["1", "2"];
+const ds9Answers =["1","2"];
+const musicQuestions= ["1","2"];
+const musicAnswers =["1","2"];
+const voyagerQuestions =[1, 2];
+const voyagerAnswers =[1, 2];
+
 $(document).ready(function () {
     // button for house of that on click of any button with the id will run through the array of questions and randomly display any, and compare the users input to the anwser array and then display correct or incorrect 
     $("button#houseof").on('click', function () {
@@ -22,29 +29,42 @@ $(document).ready(function () {
                 //questions.shift(); // take the question out of the array
                 //answers.shift(); // take the answers out of the array 
                 // $('span#scoresheet').attr(button.value);  working out the syntax
+}})
 
-            }
-
-        }
-
-
-      
-
-
-    )
-
-    $('button#shipClass').on('click', function(){
+    $('button#shipClass').on('click', function() {
         console.log('clicked');
         askQuestion = prompt(shipClassQuestions.shift())
         if (askQuestion === shipClassAnswers.shift()){
             askQuestion = true;
             alert('Correct');
                  } else {
-            alert('Incorrect')
+            alert('Incorrect');
         }
+    })
+},
+$('button#music').on('click', function(){
+    console.log('clicked');
+    askQuestion = prompt(shipClassQuestions.shift())
+    if (askQuestion === shipClassAnswers.shift()){
+        askQuestion = true;
+        alert('Correct');
+             } else {
+        alert('Incorrect');
     }
-)
-})
+}),
+
+    $('button#ds9').on('click', function(){
+        console.log('clicked');
+        askQuestion = prompt(shipClassQuestions.shift())
+        if (askQuestion === shipClassAnswers.shift()){
+            askQuestion = true;
+            alert('Correct');
+                 } else {
+            alert('Incorrect');
+        }
+    }),
+
+//doc rdy func
 
 /*function myResponse (userInput) {
     //create function
@@ -99,3 +119,4 @@ if(userInput === true) {
     alert('InCorrect');
     //if user input does not mactch then show alert incorrect. 
 }}*/
+)
