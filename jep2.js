@@ -30,7 +30,7 @@ $(document).ready(function () {
                 //answers.shift(); // take the answers out of the array 
                 // $('span#scoresheet').attr(button.value);  working out the syntax
 }})
-
+// button function for shipClass
     $('button#shipClass').on('click', function() {
         console.log('clicked');
         askQuestion = prompt(shipClassQuestions.shift())
@@ -39,21 +39,22 @@ $(document).ready(function () {
             alert('Correct');
                  } else {
             alert('Incorrect');
-        }
+        }           // end of shipclass function 
     })
-},
-$('button#music').on('click', function(){
+ // button function for ds9
+$('button#ds9').on('click', function(){
     console.log('clicked');
-    askQuestion = prompt(shipClassQuestions.shift())
-    if (askQuestion === shipClassAnswers.shift()){
+    askQuestion = prompt(ds9Questions.shift())
+    if (askQuestion === ds9Answers.shift()){
         askQuestion = true;
         alert('Correct');
              } else {
+                 askQuestion = false;
         alert('Incorrect');
     }
-}),
+}) // end of ds9 function 
 
-    $('button#ds9').on('click', function(){
+    $('button#music').on('click', function(){
         console.log('clicked');
         askQuestion = prompt(shipClassQuestions.shift())
         if (askQuestion === shipClassAnswers.shift()){
@@ -62,7 +63,7 @@ $('button#music').on('click', function(){
                  } else {
             alert('Incorrect');
         }
-    }),
+    })})
 
 //doc rdy func
 
@@ -119,4 +120,3 @@ if(userInput === true) {
     alert('InCorrect');
     //if user input does not mactch then show alert incorrect. 
 }}*/
-)
