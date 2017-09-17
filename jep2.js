@@ -8,9 +8,9 @@ const shipClassQuestions = ["USS Gandhi", "USS StarGazer", "USS Sao Paulo", "USS
 const shipClassAnswers = ["Ambassador", "Constellation", "Defiant", "Excelsior", "Galaxy"];
 
 const ds9Questions = ["1st officer", "Chief Engineer", "Klingon Coffee", "Cardassian Tailor", "First fergeni to enter Star Fleet " ];
-const ds9Answers =["Major Kira","Miles O'brian", "Raktajino", "Garak", "" ];
-const musicQuestions= ["1","2"];
-const musicAnswers =["1","2"];
+const ds9Answers =["Major Kira","Miles O'brian", "Raktajino", "Garak", "Nog" ];
+const musicQuestions= ["Star Trek: Nemesis","Star Trek: insurrection", "Star Trek: First Contact", "Star Trek Into Darkness", "Star Trek Beyond"];
+const musicAnswers =["Jerry GoldSmith","Jerry GoldSmith", "Dennis McCarthy", "Joel GoldSmith", "Michael Giacchino"];
 const voyagerQuestions =[1, 2];
 const voyagerAnswers =[1, 2];
 
