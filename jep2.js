@@ -63,8 +63,18 @@ $('button#ds9').on('click', function(){
                  } else {
             alert('Incorrect');
         }   // end of music questions
-    })})
-
+    }) // button for voyager questions 
+    $('button#voyager').on('click', function(){
+        console.log('clicked');
+        askQuestion = prompt(voyagerQuestions.shift())
+        if (askQuestion === voyagerAnswers.shift()){
+            askQuestion = true;
+            alert('Correct');
+                 } else {
+            alert('Incorrect');
+        }   // end of Voyager questions
+    })
+})
 //doc rdy func
 
 /*function myResponse (userInput) {
