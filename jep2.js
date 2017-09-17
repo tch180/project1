@@ -7,8 +7,8 @@ const shipClassQuestions = ["USS Gandhi", "USS StarGazer", "USS Sao Paulo", "USS
 //ShipClas Answers 
 const shipClassAnswers = ["Ambassador", "Constellation", "Defiant", "Excelsior", "Galaxy"];
 
-const ds9Questions = ["1st officer", "Chief Engineer", "Klingon Coffee ", ];
-const ds9Answers =["1","2", "Raktajino", ];
+const ds9Questions = ["1st officer", "Chief Engineer", "Klingon Coffee", "Cardassian Tailor", "First fergeni to enter Star Fleet " ];
+const ds9Answers =["Major Kira","Miles O'brian", "Raktajino", "Garak", "" ];
 const musicQuestions= ["1","2"];
 const musicAnswers =["1","2"];
 const voyagerQuestions =[1, 2];
