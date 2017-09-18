@@ -1,7 +1,7 @@
 //Houseof questions array 
 const questions = ["Rynar", "Kurn", "Worf", 'Jadzia', 'Dax'];
 // House fof answers array 
-const answers = ["Noggra", "kor", "Mogh", "Martok", "Martok"];
+const answers = ["Kor", "Noggra", "Mogh", "Martok", "Martok"];
 //ShipClass questions
 const shipClassQuestions = ["USS Gandhi", "USS StarGazer", "USS Sao Paulo", "USS Melbourne", "USS Odyssey"];
 //ShipClas Answers 
@@ -11,7 +11,7 @@ const ds9Questions = ["1st officer", "Chief Engineer", "Klingon Coffee", "Cardas
 const ds9Answers =["Major Kira","Miles O'brian", "Raktajino", "Garak", "Nog" ];
 const musicQuestions= ["Star Trek: Nemesis","Star Trek: insurrection", "Star Trek: First Contact", "Star Trek Into Darkness", "Star Trek Beyond"];
 const musicAnswers =["Jerry GoldSmith","Jerry GoldSmith", "Dennis McCarthy", "Joel GoldSmith", "Michael Giacchino"];
-const voyagerQuestions =[1, 2];
+const voyagerQuestions =["Voyager ", 2];
 const voyagerAnswers =[1, 2];
 
 $(document).ready(function () {
